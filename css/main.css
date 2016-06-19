@@ -1,0 +1,48 @@
+header {
+    background-color: black;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    clear: both;
+    color: white;
+}
+nav {
+    background-color:#eeeeee;
+    float:left;
+    /* padding:5px; */
+    color: #333;
+    clear: both;
+    width: 200px;
+    height: initial;
+}
+section {
+    width: calc(100% - 250px);
+    float:left;
+    padding:10px;
+}
+ul {
+    height: 530px;
+}
+.main-container {
+    float: none;
+    position: absolute;
+    top: 80px;
+    padding: 0;
+    width: 100%;
+    left: 0;
+}
+footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px;
+    position: absolute;
+    bottom: 0;
+    /* width: 100%; */
+    /* top: 0; */
+    right: 0;
+    left: 0;
+}
