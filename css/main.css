@@ -1,48 +1,49 @@
-header {
-    background-color: black;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    text-align: center;
-    clear: both;
-    color: white;
+* {
+    margin: 0;
+    padding: 0;
 }
-nav {
-    background-color:#eeeeee;
-    float:left;
-    /* padding:5px; */
-    color: #333;
-    clear: both;
-    width: 200px;
-    height: initial;
-}
-section {
-    width: calc(100% - 250px);
-    float:left;
-    padding:10px;
+body {
+    margin: 0;
 }
 ul {
-    height: 530px;
+    list-style: none;
 }
-.main-container {
-    float: none;
-    position: absolute;
-    top: 80px;
-    padding: 0;
-    width: 100%;
-    left: 0;
+p {
+    margin: 10px 0;
 }
+.web-accessibility-app {
+    display: flex;
+    flex-flow: row wrap;
+}
+header,
+nav,
+main,
 footer {
-    background-color:black;
-    color:white;
-    clear:both;
-    text-align:center;
-    padding:5px;
-    position: absolute;
-    bottom: 0;
-    /* width: 100%; */
-    /* top: 0; */
-    right: 0;
-    left: 0;
+    background: #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 5px
+}
+
+.web-accessibility-app > header {
+    order: 1;
+    flex: 0 1 100%;
+    height: 45px;
+    text-align: center;
+}
+.web-accessibility-app > nav {
+    order: 2;
+    flex: 0 1 200px;
+}
+.web-accessibility-app > main {
+    order: 3;
+    flex: 1;
+}
+.web-accessibility-app > footer {
+    order: 4;
+    flex: 0 1 100%;
+    height: 25px;
+    padding: 5px;
+    margin: 5px;
+    padding-top: 10px;
 }
